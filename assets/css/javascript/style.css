@@ -26,10 +26,16 @@ form label {
     font-weight: bold;
 }
 
-form input {
+form input,
+form select,
+form textarea {
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
+}
+
+form textarea {
+    resize: vertical;
 }
 
 button {
@@ -170,13 +176,14 @@ button:hover {
     margin-top: 40px;
 }
 
-.project-page {
-    width: 1100px;
+.project-page,
+.task-page {
+    width: 1150px;
     max-width: 95%;
 }
 
 .form-page {
-    width: 500px;
+    width: 550px;
     max-width: 95%;
 }
 
@@ -187,7 +194,8 @@ button:hover {
     margin-bottom: 20px;
 }
 
-.project-table {
+.project-table,
+.task-table {
     width: 100%;
     border-collapse: collapse;
     background: white;
@@ -195,18 +203,23 @@ button:hover {
 }
 
 .project-table th,
-.project-table td {
+.project-table td,
+.task-table th,
+.task-table td {
     border: 1px solid #ddd;
     padding: 12px;
     text-align: center;
+    vertical-align: middle;
 }
 
-.project-table th {
+.project-table th,
+.task-table th {
     background-color: #2d6cdf;
     color: white;
 }
 
-.project-table tr:nth-child(even) {
+.project-table tr:nth-child(even),
+.task-table tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
@@ -222,6 +235,10 @@ button:hover {
     cursor: not-allowed;
 }
 
+.delete-link {
+    color: #c62828;
+}
+
 .empty-box {
     text-align: center;
     background: white;
@@ -230,12 +247,7 @@ button:hover {
     box-shadow: 0 0 10px rgba(0,0,0,0.08);
 }
 
-form select {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-.delete-link {
-    color: #c62828;
+.filter-note {
+    text-align: center;
+    margin-bottom: 20px;
 }

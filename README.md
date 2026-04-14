@@ -54,3 +54,13 @@ TaskFlow is a simple Project Management Tool built with PHP, MySQL, HTML, CSS, a
 - Added validation for editing project data
 - Used prepared statements for update and delete operations
 - Successfully tested project update, deletion, and dashboard project count changes
+
+## Day 7 Progress
+- Built `tasks.php` to display the current user's task list
+- Used SQL JOIN to show each task with its related project name
+- Built `add_task.php` for creating new tasks
+- Added validation to ensure tasks are linked to a valid project
+- Prevented task creation when no projects exist
+- Updated navigation to include the Tasks page
+- Updated `projects.php` so each project can link to its related tasks
+- Successfully tested task creation and dashboard task count updates
