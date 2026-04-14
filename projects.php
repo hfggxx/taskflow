@@ -26,6 +26,7 @@ include 'include/header.php';
             <thead>
                 <tr>
                     <th>Project Name</th>
+                    <th>Description</th>
                     <th>Priority</th>
                     <th>Status</th>
                     <th>Due Date</th>
@@ -37,6 +38,9 @@ include 'include/header.php';
                 <?php foreach ($projects as $project): ?>
                     <tr>
                         <td><?php echo htmlspecialchars($project['project_name']); ?></td>
+                        <td>
+                            <?php echo !empty($project['description']) ? htmlspecialchars($project['description']) : 'N/A'; ?>
+                        </td>
                         <td><?php echo htmlspecialchars($project['priority']); ?></td>
                         <td><?php echo htmlspecialchars($project['status']); ?></td>
                         <td>
@@ -44,8 +48,8 @@ include 'include/header.php';
                         </td>
                         <td><?php echo htmlspecialchars($project['created_at']); ?></td>
                         <td>
-                            <a href="#" class="action-link disabled-link">Edit</a>
-                            <a href="#" class="action-link disabled-link">Delete</a>
+                            <a href="edit_project.php?id=<?php echo $project['id']; ?>" class="action-link">Edit</a>
+                            <a href="delete_project.php?id=<?php echo $project['id']; ?>" class="action-link delete-link" onclick="return confirm('Are you sure you want to delete this project?');">Delete</a>
                             <a href="#" class="action-link disabled-link">Tasks</a>
                         </td>
                     </tr>

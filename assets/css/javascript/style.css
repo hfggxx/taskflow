@@ -235,3 +235,7 @@ form select {
     padding: 10px;
     box-sizing: border-box;
 }
+
+.delete-link {
+    color: #c62828;
+}
