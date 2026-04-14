@@ -92,8 +92,8 @@ include 'include/header.php';
                         </td>
                         <td><?php echo htmlspecialchars($task['created_at']); ?></td>
                         <td>
-                            <a href="#" class="action-link disabled-link">Edit</a>
-                            <a href="#" class="action-link disabled-link">Delete</a>
+                            <a href="edit_task.php?id=<?php echo $task['id']; ?>" class="action-link">Edit</a>
+                            <a href="delete_task.php?id=<?php echo $task['id']; ?>" class="action-link delete-link" onclick="return confirm('Are you sure you want to delete this task?');">Delete</a>
                             <a href="#" class="action-link disabled-link">Update Status</a>
                         </td>
                     </tr>
