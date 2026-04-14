@@ -22,6 +22,7 @@ if (!isset($_SESSION)) {
         <?php if (isset($_SESSION['user_id'])): ?>
             <span class="welcome-text">Hi, <?php echo htmlspecialchars($_SESSION['username']); ?></span>
             <a href="dashboard.php">Dashboard</a>
+            <a href="projects.php">Projects</a>
             <a href="logout.php">Logout</a>
         <?php else: ?>
             <a href="login.php">Login</a>

@@ -169,3 +169,69 @@ button:hover {
     color: #555;
     margin-top: 40px;
 }
+
+.project-page {
+    width: 1100px;
+    max-width: 95%;
+}
+
+.form-page {
+    width: 500px;
+    max-width: 95%;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.project-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
+
+.project-table th,
+.project-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.project-table th {
+    background-color: #2d6cdf;
+    color: white;
+}
+
+.project-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.action-link {
+    margin: 0 5px;
+    color: #2d6cdf;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.disabled-link {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.empty-box {
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
+
+form select {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
