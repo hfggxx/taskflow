@@ -18,3 +18,13 @@ TaskFlow is a simple Project Management Tool built with PHP, MySQL, HTML, CSS, a
 - Added a simple placeholder login page
 - Added basic CSS styling
 - Registration data successfully stored in MySQL
+
+## Day 3 Progress
+- Built the user login page
+- Added server-side validation for login form
+- Verified user credentials using `password_verify()`
+- Implemented PHP session-based authentication
+- Added `auth_check.php` to protect private pages
+- Built a simple dashboard page for login testing
+- Added logout functionality
+- Successfully tested login, logout, and route protection
