@@ -50,7 +50,7 @@ include 'include/header.php';
                         <td>
                             <a href="edit_project.php?id=<?php echo $project['id']; ?>" class="action-link">Edit</a>
                             <a href="delete_project.php?id=<?php echo $project['id']; ?>" class="action-link delete-link" onclick="return confirm('Are you sure you want to delete this project?');">Delete</a>
-                            <a href="#" class="action-link disabled-link">Tasks</a>
+                            <a href="tasks.php?project_id=<?php echo $project['id']; ?>" class="action-link">Tasks</a>
                         </td>
                     </tr>
                 <?php endforeach; ?>
