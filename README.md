@@ -73,3 +73,38 @@ TaskFlow is a simple Project Management Tool built with PHP, MySQL, HTML, CSS, a
 - Added validation for editing task data
 - Used prepared statements for update and delete operations
 - Successfully tested task updates, deletion, and dashboard task count changes
+
+## Today's Updates (2026-05-07)
+
+## Overview
+This update includes enhancements to the TASKFLOW project, focusing on task management, AJAX updates, and file upload functionality.
+
+## Files Modified / Added
+1. **logout.php**
+   - Updated logout logic using `session_start()`, `session_unset()`, and `session_destroy()`.
+   - Redirects to `login.php` after logout.
+
+2. **projects.php**
+   - Adjustments and improvements for project listing and display.
+   - Ensured prepared statements are used for database queries.
+
+3. **update_task_status.php** *(new)*
+   - Handles AJAX requests from `tasks.php` to toggle task status between "Pending" and "Completed".
+   - Ensures only the logged-in user's tasks are updated.
+   - Uses PDO prepared statements for security.
+
+4. **uploadfile.php** *(new)*
+   - Handles file uploads for tasks.
+   - Uploaded files are saved in the `uploads/` directory.
+   - Updates the corresponding task's `file_path` in the database.
+
+## Features Implemented
+- Dynamic task status update via AJAX without page reload.
+- Task file upload support with view/download functionality.
+- Logout functionality properly clears session data.
+- Minor improvements to project display and database interactions.
+
+## Notes
+- All database interactions use PDO prepared statements for security.
+- File uploads are saved to the `uploads/` directory (ensure this folder exists and is writable).
+- Tested on local XAMPP environment; all new features work as expected.
